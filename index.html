@@ -195,13 +195,13 @@
         transform: rotate(360deg);
       }
     }
-    @media (min-width: 575px) {
+    @media (min-width: 991px) {
       .main-area {
         padding: 0px;
         overflow-y: scroll;
       }
     }
-    @media (max-width: 575px) {
+    @media (max-width: 991px) {
       .loader {
         top: 40%;
         left: 45%;
@@ -229,7 +229,7 @@
             </div>
           </div>
           <div class="row p-0 m-0 w-100">
-            <div class="col-sm-6 col-xs-6 p-0">
+            <div class="col-lg-6 p-0">
               <div class="row p-0 m-0 w-100">
                 <div
                   id="codeColumn"
@@ -262,7 +262,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xs-6 p-0">
+            <div class="col-lg-6 p-0">
               <div class="row p-0 m-0 w-100 h-100">
                 <div
                   id="outputColumn"
@@ -370,7 +370,7 @@
         if (
           document.getElementById("run-btn-text").innerHTML?.includes("Retry")
         ) {
-          if (window.innerWidth < 576) {
+          if (window.innerWidth < 992) {
             document.getElementById("toggleCodeButton").scrollIntoView({
               behavior: "smooth",
             });
@@ -435,7 +435,7 @@
             document.getElementById("run-loader").style.display = "none";
             document.getElementById("run-btn-text").style.display = "block";
             runBtn.classList.remove("run-disabled");
-            if (window.innerWidth < 576) {
+            if (window.innerWidth < 992) {
               document.getElementById("run-btn-text").innerHTML = "Retry";
             }
             document.getElementById("compiledOutput").innerText = `${output}`;
