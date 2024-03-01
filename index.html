@@ -181,6 +181,12 @@
     .output-column {
       text-align: right;
     }
+    .editor-footer-container {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 9;
+    }
     @keyframes spin {
       0% {
         transform: rotate(0deg);
@@ -192,19 +198,10 @@
     @media (min-width: 575px) {
       .main-area {
         padding: 0px;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
         overflow-y: scroll;
       }
     }
     @media (max-width: 575px) {
-      .editor-footer-container {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        z-index: 9;
-      }
       .loader {
         top: 40%;
         left: 45%;
